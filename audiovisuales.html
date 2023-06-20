@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>MODULARES SAN LORENZO</title>
+
+    <style>
+        body {
+            font-family: "Lucida Console", "Courier New", monospace;
+            background: linear-gradient(to right, rgb(189, 189, 255), rgb(255, 233, 236));
+            padding: 0;
+            margin: 0;
+        }
+
+        header {
+            text-align: center;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover:not(.active) {
+            background-color: #111;
+        }
+
+        .active {
+            background-color: #04AA6D;
+        }
+
+        h1 {
+            background-color: black;
+            padding: 10px;
+            margin: 0;
+            color: #92a4ff;
+        }
+
+        div.gallery {
+            margin: 5px;
+            border: 1px solid #ccc;
+            float: left;
+            width: 33vw;
+        }
+
+        div.gallery:hover {
+            border: 1px solid #777;
+        }
+
+        div.gallery img {
+            width: 100%;
+            height: auto;
+        }
+
+        div.desc {
+            padding: 15px;
+            text-align: center;
+        }
+
+        .centrado {
+            display: flex;
+            justify-content: center;
+        }
+
+        .footer {
+            background-color: #333;
+            color: #FFF;
+            padding: 10px;
+            text-align: center;
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>MODULARES SAN LORENZO</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="preferencias.html">Preferencias</a></li>
+                <li><a class="active" href="audiovisuales.html">Audiovisuales</a></li>
+                <li><a href="contactos.html">Contactos</a> </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="centrado" style="margin-top: 15px;">
+        <video  src="/assets/video/vid_bienvenida.mp4" autoplay muted width="400" height="400"></video>
+    </div>
+    <div class="centrado" style="margin-top: 15px;">
+        <audio class="centrado" src="/assets/audio/cortina-musical-dibujos-animados-.mp3" autoplay controls></audio>
+    </div>
+    
+
+    <section class="centrado" style="margin-top: 15px;">
+        <div class="gallery">
+            <a href="/assets/img/modulares.png" target="_blank"><img src="/assets/img/modulares.png"
+                    alt="Modulares Img 1" width="260" height="100">
+            </a>
+            <div class="desc">Modular 1</div>
+        </div>
+        <div class="gallery">
+            <a href="/assets/img/imag_modular.png" target="_blank"><img src="/assets/img/imag_modular.png"
+                    alt="Modulares Img 2" width="260" height="100"></a>
+            <div class="desc">Modular 2</div>
+        </div>
+        <div class="gallery">
+            <a href="/assets/img/img_cocina.png" target="_blank"><img src="/assets/img/img_cocina.png"
+                    alt="Modulares Img 3" width="260" height="100"></a>
+            <div class="desc">Modular 3</div>
+        </div>
+    </section>
+    <hr>
+    <footer class="footer">Derechos reservados &copy; 2023 </footer>
+</body>
+
+</html>
